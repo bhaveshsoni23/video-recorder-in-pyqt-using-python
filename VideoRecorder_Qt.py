@@ -69,8 +69,6 @@ class Recorder(QMainWindow):
         img=QImage(img,img.shape[1],img.shape[0],qformat)
         img=img.rgbSwapped()
 
-        self.imgLabel.setPixmap(QPixmap.fromImage(img))
-
 app=QApplication(sys.argv)
 window=Recorder()
 window.show()
